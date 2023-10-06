@@ -1,0 +1,17 @@
+replicaCount: 1
+
+image:
+  repository: docker.elastic.co/beats/elastic-agent
+  tag: 8.10.0
+  pullPolicy: IfNotPresent
+
+fleet:
+  url: "https://fleet-server_url:port"
+  enrollmentToken: "your-enrollment-token"
+  serverPolicyID: "fleet-server-policy"
+  kibanaHost: ""
+  kibanaFleetUsername: ""
+  kibanaFleetPassword: ""
+
+resources: {}
+
